@@ -4,6 +4,7 @@ from setuptools import setup
 setup(
     name="pygitapi",
     install_requires=[
+        'requests'
     ],
     extras_require={
     },

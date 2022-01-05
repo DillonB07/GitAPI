@@ -13,6 +13,8 @@ class QueryFailError(Exception):
 
 
 class GitStats:
+    """Use GitHub's GraphQL API to get information about repositories, users and more"""
+
     def __init__(self, git_token: str):
         self.token = git_token
         self.headers = {"Authorization": "Bearer " + self.token}

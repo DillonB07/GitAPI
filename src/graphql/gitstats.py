@@ -92,7 +92,3 @@ query user {
         print(query)
         response = self.get_query(query)
         print(response)
-
-
-stats = GitStats('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')
-stats.user_info('DillonB07')

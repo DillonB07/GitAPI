@@ -1,12 +1,12 @@
-# PyGitApi
+# GitStats
 
-![PyPI](https://img.shields.io/pypi/v/pygitapi?color=blue&label=PyPi&logo=pypi&logoColor=yellow)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/pygitapi?color=blue&label=Downloads&logo=pypi&logoColor=yellow)
-![PyPI - Format](https://img.shields.io/pypi/format/pygitapi?color=blue&&label=Format&logo=pypi&logoColor=yellow)
-![PyPI - Status](https://img.shields.io/pypi/status/pygitapi?color=blue&label=Status&logo=pypi&logoColor=yellow)
-![PyPI - License](https://img.shields.io/pypi/l/pygitapi?color=blue&label=License&logo=pypi&logoColor=yellow)
+![PyPI](https://img.shields.io/pypi/v/pygitstats?color=blue&label=PyPi&logo=pypi&logoColor=yellow)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pygitstats?color=blue&label=Downloads&logo=pypi&logoColor=yellow)
+![PyPI - Format](https://img.shields.io/pypi/format/pygitstats?color=blue&&label=Format&logo=pypi&logoColor=yellow)
+![PyPI - Status](https://img.shields.io/pypi/status/pygitstats?color=blue&label=Status&logo=pypi&logoColor=yellow)
+![PyPI - License](https://img.shields.io/pypi/l/pygitstats?color=blue&label=License&logo=pypi&logoColor=yellow)
 
-PyGitApi is a package that allows you to use the GitHub GraphQL API with ease in your Python programs.
+pygitstats is a package that allows you to use the GitHub GraphQL API with ease in your Python programs.
 
 ## Installation
 
@@ -15,37 +15,37 @@ Anyone can use this package by installing it from PyPi via one of the following 
 ### Pip
 
 ```zsh
-pip install pygitapi
+pip install pygitstats
 ```
 
 ```zsh
-pip3 install pygitapi
+pip3 install pygitstats
 ```
 
 ```zsh
-python -m pip install pygitapi
+python -m pip install pygitstats
 ```
 
 ```zsh
-python3 -m pip install pygitapi
+python3 -m pip install pygitstats
 ```
 
 ### Poetry
 
 ```zsh
-poetry install pygitapi
+poetry install pygitstats
 ```
 
 ### Conda
 
 ```zsh
-conda install pygitapi
+conda install pygitstats
 ```
 
 ### Pipenv
 
 ```zsh
-pipenv install pygitapi
+pipenv install pygitstats
 ```
 
 ## Usage

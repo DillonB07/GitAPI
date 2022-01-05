@@ -91,6 +91,5 @@ query user {
   }
 }
         '''
-        print(query)
         response = self.get_query(query)
-        print(response)
+        return response

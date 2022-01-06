@@ -12,25 +12,25 @@ class QueryFailError(Exception):
     pass
 
 
+def get_query(self, query):
+    request = requests.post(URL, json={'query': query}, headers=self.headers)
+    if request.status_code == 200:
+        return json.dumps(request.json(), indent=4, sort_keys=True)
+    else:
+        raise QueryFailError("Query failed to run by returning code of {}. {}".format(
+            request.status_code, query))
+
+
 class GitStats:
     """Use GitHub's GraphQL API to get information about repositories, users and more"""
 
     def __init__(self, git_token: str):
+        """Hold GitHub token"""
         self.token = git_token
         self.headers = {"Authorization": "Bearer " + self.token}
 
-    def get_query(self, query):
-
-        request = requests.post(
-            URL, json={'query': query}, headers=self.headers)
-        if request.status_code == 200:
-            return json.dumps(request.json(), indent=4, sort_keys=True)
-        else:
-            raise QueryFailError("Query failed to run by returning code of {}. {}".format(
-                request.status_code, query))
-
     def custom_query(self, query):
-        """Allows usage of custom GraphQL queries for the GitHub GrapQL API"""
+        """Allows usage of custom GraphQL queries for the GitHub GraphQL API"""
         return self.get_query(query)
 
     def user_info(self, user: str):

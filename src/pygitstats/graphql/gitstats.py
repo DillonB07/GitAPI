@@ -11,7 +11,7 @@ class GitStats:
 
     def custom_query(self, query):
         """Allows usage of custom GraphQL queries for the GitHub GraphQL API"""
-        return get_query(query)
+        return get_query(self, query)
 
     def user_info(self, user: str):
         """Returns basic information about given user"""
@@ -71,5 +71,5 @@ query user {
   }
 }
         '''
-        response = get_query(query)
+        response = get_query(self, query)
         return response

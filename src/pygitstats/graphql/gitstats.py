@@ -11,12 +11,12 @@ class GitStats:
 
     def custom_query(self, query):
         """Allows usage of custom GraphQL queries for the GitHub GraphQL API"""
-        return get_query(self, query)
+        return get_query(self.headers, query)
 
     def user_info(self, user: str):
         """Returns basic information about given user"""
         query = '''
-query user {
+query {
   user(login: "''' + user + '''") { 
     url
     login

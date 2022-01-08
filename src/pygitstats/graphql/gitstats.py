@@ -71,5 +71,5 @@ query user {
   }
 }
         '''
-        response = get_query(self, query)
+        response = get_query(self.headers, query)
         return response

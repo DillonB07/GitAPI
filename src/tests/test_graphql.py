@@ -12,6 +12,8 @@ def test_user_info():
     response = g.user_info('DillonB07')
     if response['user']['login'] == 'DillonB07':
         output = True
+    else:
+        output = False
     assert output == True
 
 
@@ -27,4 +29,6 @@ query {
     response = g.custom_query(query)
     if response['user']['login'] == 'DillonB07' and response['data']['user']['url'] == 'https://api.github.com/users/DillonB07':
         output = True
+    else:
+        output = False
     assert output == True

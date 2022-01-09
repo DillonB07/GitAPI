@@ -7,7 +7,7 @@ class GitStats:
     def __init__(self, git_token: str):
         """Hold GitHub token"""
         self.token = git_token
-        self.headers = {"Authorization": "Bearer " + self.token}
+        self.headers = {"Authorization": f"Bearer {self.token}"}
 
     def custom_query(self, query):
         """Allows usage of custom GraphQL queries for the GitHub GraphQL API"""
@@ -15,9 +15,9 @@ class GitStats:
 
     def user_info(self, user: str):
         """Returns basic information about given user"""
-        query = '''
+        query = """
 query {
-  user(login: "''' + user + '''") { 
+  user(login: \"""" + user + """\") { 
     url
     login
     name
@@ -70,6 +70,6 @@ query {
     }
   }
 }
-        '''
+        """
         response = get_query(self.headers, query)
         return response

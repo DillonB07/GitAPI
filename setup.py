@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name="pygitstats",
     install_requires=[
-        'requests'
+        'gql>=3.0.0rc0'
     ],
     extras_require={
     },

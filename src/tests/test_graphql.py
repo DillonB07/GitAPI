@@ -27,8 +27,9 @@ query {
 }
     '''
     response = g.custom_query(query)
-    if response['data']['user']['login'] == 'DillonB07' and response['data']['user']['url'] == 'https://api.github.com/users/DillonB07':
+    if response['data']['user']['login'] == 'DillonB07' and response['data']['user']['url'] == 'https://github.com/DillonB07':
         output = True
     else:
+        print(response)
         output = False
     assert output == True

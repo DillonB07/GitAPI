@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-token = os.environ['GITHUB_PERSONAL_ACCESS_TOKEN']
+token = os.environ['PERSONAL_ACCESS_TOKEN']
 g = GitStats(token)
 
 

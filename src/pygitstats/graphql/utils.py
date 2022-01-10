@@ -1,6 +1,5 @@
+import requests
 import json
-from gql import gql, Client
-from gql.transport.aiohttp import AIOHTTPTransport
 
 URL = 'https://api.github.com/graphql'
 
@@ -13,10 +12,11 @@ class QueryFailError(Exception):
     pass
 
 
-def get_query(headers, query):
-    transport = AIOHTTPTransport(
-        url=URL, headers=headers)
-    client = Client(transport=transport, fetch_schema_from_transport=True)
-    query = gql(query)
-    response = client.execute(query)
-    return json.dumps(response, indent=4, sort_keys=True)
+def get_query(headers: dict, query: str):
+    request = requests.post(
+        URL, json={'query': query}, headers=headers)
+    if request.status_code == 200:
+        return json.JSONDecoder().decode(json.dumps(request.json(), sort_keys=True))
+    else:
+        raise QueryFailError("Query failed to run by returning code of {}. {}".format(
+            request.status_code, query))

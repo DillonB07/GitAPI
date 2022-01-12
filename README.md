@@ -1,5 +1,6 @@
 # GitStats
 
+[![Tests](https://github.com/DillonB07/GitStats/actions/workflows/pytest.yml/badge.svg)](https://github.com/DillonB07/GitStats/actions/workflows/pytest.yml)
 ![PyPI](https://img.shields.io/pypi/v/pygitstats?color=blue&label=PyPi&logo=pypi&logoColor=yellow)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/pygitstats?color=blue&label=Downloads&logo=pypi&logoColor=yellow)
 ![PyPI - Format](https://img.shields.io/pypi/format/pygitstats?color=blue&&label=Format&logo=pypi&logoColor=yellow)

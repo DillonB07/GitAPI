@@ -17,6 +17,15 @@ def test_user_info():
     assert output == True
 
 
+def test_repo_info():
+    response = g.repo_info(owner='DillonB07', name='GitStats')
+    if response['data']['repository']['name'] == 'GitStats':
+        output = True
+    else:
+        output = False
+    assert output == True
+
+
 def test_custom_query():
     query = '''
 query {

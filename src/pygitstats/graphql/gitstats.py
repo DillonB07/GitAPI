@@ -9,7 +9,7 @@ class GitStats:
         self.token = git_token
         self.headers = {"Authorization": f"Bearer {self.token}"}
 
-    def custom_query(self, query):
+    def custom_query(self, query: str):
         """Allows usage of custom GraphQL queries for the GitHub GraphQL API"""
         return get_query(self.headers, query)
 
@@ -70,6 +70,74 @@ query {
     }
   }
 }
+        """
+        response = get_query(self.headers, query)
+        return response
+    
+    def repo_info(self, name: str, owner: str):
+        """Returns basic information about given repositor"""
+        query = """
+query {
+  repository(name: \"""" + name + """\", owner: \"""" + owner + """\") {
+    nameWithOwner
+    url
+    homepageUrl
+    isInOrganization
+    description
+    stargazerCount
+    stargazers(first: 10) {
+      nodes {
+        login
+        name
+        avatarUrl
+        url
+      }
+    }
+    watchers(first: 10) {
+      nodes {
+        login
+        name
+        avatarUrl
+        url
+      }
+    }
+    issues(first: 10) {
+      totalCount
+      nodes {
+        author {
+          login
+          url
+          avatarUrl
+        }
+        body
+        url
+        title
+        state
+        closedAt
+        createdAt
+      }
+    }
+    updatedAt
+    viewerCanAdminister
+    viewerHasStarred
+    collaborators(first: 10) {
+      totalCount
+      nodes {
+        avatarUrl
+        login
+        name
+        url
+      }
+    }
+    isEmpty
+    isFork
+    isArchived
+    forkingAllowed
+    forkCount
+    isPrivate
+  }
+}
+
         """
         response = get_query(self.headers, query)
         return response

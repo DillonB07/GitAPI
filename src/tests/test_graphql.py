@@ -19,7 +19,7 @@ def test_user_info():
 
 def test_repo_info():
     response = g.repo_info(owner='DillonB07', name='GitStats')
-    if response['data']['repository']['nameWithOwner'] == 'GitStats':
+    if response['data']['repository']['nameWithOwner'] == 'DillonB07/GitStats':
         output = True
     else:
         output = False

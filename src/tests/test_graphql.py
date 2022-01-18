@@ -19,8 +19,8 @@ def test_user_info():
 
 
 def test_repo_info():
-    response = g.repo_info(owner='DillonB07', name='GitStats')
-    if response['data']['repository']['nameWithOwner'] == 'DillonB07/GitStats':
+    response = g.repo_info(owner='DillonB07', name='GitAPI')
+    if response['data']['repository']['nameWithOwner'] == 'DillonB07/GitAPI':
         output = True
     else:
         output = False
@@ -48,7 +48,7 @@ query {
 def test_custom_mutation():
     query = '''
 query {
-  repository(owner: "DillonB07", name: "GitStats") {
+  repository(owner: "DillonB07", name: "GitAPI") {
     issue(number: 7) {
       id
     }

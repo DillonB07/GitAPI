@@ -1,13 +1,13 @@
 # GitStats
 
-[![Tests](https://github.com/DillonB07/GitStats/actions/workflows/pytest.yml/badge.svg)](https://github.com/DillonB07/GitStats/actions/workflows/pytest.yml)
-![PyPI](https://img.shields.io/pypi/v/pygitstats?color=blue&label=PyPi&logo=pypi&logoColor=yellow)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/pygitstats?color=blue&label=Downloads&logo=pypi&logoColor=yellow)
-![PyPI - Format](https://img.shields.io/pypi/format/pygitstats?color=blue&&label=Format&logo=pypi&logoColor=yellow)
-![PyPI - Status](https://img.shields.io/pypi/status/pygitstats?color=blue&label=Status&logo=pypi&logoColor=yellow)
-![PyPI - License](https://img.shields.io/pypi/l/pygitstats?color=blue&label=License&logo=pypi&logoColor=yellow)
+[![Tests](https://github.com/DillonB07/GitAPI/actions/workflows/pytest.yml/badge.svg)](https://github.com/DillonB07/GitAPI/actions/workflows/pytest.yml)
+![PyPI](https://img.shields.io/pypi/v/pygitapi?color=blue&label=PyPi&logo=pypi&logoColor=yellow)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pygitapi?color=blue&label=Downloads&logo=pypi&logoColor=yellow)
+![PyPI - Format](https://img.shields.io/pypi/format/pygitapi?color=blue&&label=Format&logo=pypi&logoColor=yellow)
+![PyPI - Status](https://img.shields.io/pypi/status/pygitapi?color=blue&label=Status&logo=pypi&logoColor=yellow)
+![PyPI - License](https://img.shields.io/pypi/l/pygitapi?color=blue&label=License&logo=pypi&logoColor=yellow)
 
-pygitstats is a package that allows you to use the GitHub GraphQL API with ease in your Python programs.
+pygitapi is a package that allows you to use the GitHub GraphQL API with ease in your Python programs.
 
 ## Installation
 
@@ -16,38 +16,43 @@ Anyone can use this package by installing it from PyPi via one of the following 
 ### Pip
 
 ```zsh
-pip install pygitstats
+pip install --upgrade pygitapi
 ```
 
 ```zsh
-pip3 install pygitstats
+pip3 install --upgrade pygitapi
 ```
 
 ```zsh
-python -m pip install pygitstats
+python -m pip install --upgrade pygitapi
 ```
 
 ```zsh
-python3 -m pip install pygitstats
+python3 -m pip install --upgrade pygitapi
 ```
+
+> Add the `--pre` flag to get the latest pre-release
 
 ### Poetry
 
 ```zsh
-poetry install pygitstats
+poetry install pygitapi
 ```
 
 ### Conda
 
 ```zsh
-conda install pygitstats
+conda install pygitapi
 ```
+
+> You will not be able to install pre-releases on conda
 
 ### Pipenv
 
 ```zsh
-pipenv install pygitstats
+pipenv install --selective-upgrade pygitapi
 ```
+> Add the `--pre` flag to get the latest pre-release
 
 ## Usage
 

@@ -21,7 +21,7 @@ jobs:
           python-version: '3.10.x'
         
       - name: Install dependencies
-        run: pip install --upgrade --pre pytest pygitstats python-dotenv
+        run: pip install --upgrade --pre pytest pygitapi python-dotenv
 
       - name: Run pytest
         run: pytest

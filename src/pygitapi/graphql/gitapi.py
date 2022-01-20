@@ -161,7 +161,9 @@ query {
 mutation {
     addComment(input: {subjectId: "''' + id + '''", body: "''' + comment + '''"}) {
         commentEdge {
-            body
+            node {
+                body
+            }
         }
     }
 }

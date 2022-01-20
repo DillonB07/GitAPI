@@ -50,6 +50,14 @@ def test_get_issue_id():
     assert response == 'I_kwDOGn7mEc5B2iR3'
 
 
+def test_comment_on_issue():
+    current_time = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    response = g.comment_on_issue(
+        'DillonB07', 'GitAPI', 7, f'Test `test_comment_on_issue()` ran successfully at {current_time}')
+    assert response == {'data': {'addComment': {'commentEdge': {'node': {
+        'body': f'Test `test_comment_on_issue()` ran successfully at {current_time}'}}}}}
+
+
 def test_custom_mutation():
     query = '''
 query {

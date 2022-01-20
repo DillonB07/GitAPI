@@ -71,8 +71,8 @@ query {
   }
 }
         """
-        response = self.custom_query(query)
-        return response
+
+        return self.custom_query(query)
 
     def repo_info(self, name: str, owner: str):
         """Returns basic information about given repositor"""
@@ -139,8 +139,8 @@ query {
 }
 
         """
-        response = self.custom_query(query)
-        return response
+
+        return self.custom_query(query)
 
     def get_issue_id(self, owner: str, repo: str, number: int):
         query = '''
@@ -154,3 +154,17 @@ query {
     '''
         response = self.custom_query(query)
         return response['data']['repository']['issue']['id']
+
+    def comment_on_issue(self, owner: str, repo: str, number: int, comment: str):
+        id = self.get_issue_id(owner, repo, number)
+        mutation = '''
+mutation {
+    addComment(input: {subjectId: "''' + id + '''", body: "''' + comment + '''"}) {
+        commentEdge {
+            body
+        }
+    }
+}
+        '''
+
+        return self.custom_query(mutation)

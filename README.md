@@ -3,7 +3,7 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# GitStats
+# pyGitAPI
 
 [![Tests](https://github.com/DillonB07/GitAPI/actions/workflows/pytest.yml/badge.svg)](https://github.com/DillonB07/GitAPI/actions/workflows/pytest.yml)
 ![PyPI](https://img.shields.io/pypi/v/pygitapi?color=blue&label=PyPi&logo=pypi&logoColor=yellow)

@@ -45,6 +45,11 @@ query {
     assert output == True
 
 
+def test_get_issue_id():
+    response = g.get_issue_id('DillonB07', 'GitAPI', 7)
+    assert response == 'I_kwDOGn7mEc5B2iR3'
+
+
 def test_custom_mutation():
     query = '''
 query {

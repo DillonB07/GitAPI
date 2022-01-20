@@ -71,9 +71,9 @@ query {
   }
 }
         """
-        response = get_query(self.headers, query)
+        response = self.custom_query(query)
         return response
-    
+
     def repo_info(self, name: str, owner: str):
         """Returns basic information about given repositor"""
         query = """
@@ -139,5 +139,18 @@ query {
 }
 
         """
-        response = get_query(self.headers, query)
+        response = self.custom_query(query)
         return response
+
+    def get_issue_id(self, owner: str, repo: str, number: int):
+        query = '''
+query {
+    repository(owner: "''' + owner + '''", name: "''' + repo + '''") {
+        issue(number: ''' + str(number) + ''') {
+            id
+        }
+    }
+}
+    '''
+        response = self.custom_query(query)
+        return response['data']['repository']['issue']['id']

@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "kokonut27",
+      "name": "kokomi simp :3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/76911308?v=4",
+      "profile": "http://jbloves27.repl.co",
+      "contributions": [
+        "code",
+        "question"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "GitAPI",
+  "projectOwner": "DillonB07",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

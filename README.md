@@ -1,6 +1,6 @@
 > Currently, pyGitAPI is in development, so make sure you get the prerelease to get the features! If you create programs using this, there shouldn't be any breaking changes coming, but make sure to check the release notes! 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # GitStats
@@ -83,6 +83,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://jbloves27.repl.co"><img src="https://avatars.githubusercontent.com/u/76911308?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kokomi simp :3</b></sub></a><br /><a href="https://github.com/DillonB07/GitAPI/commits?author=kokonut27" title="Code">💻</a> <a href="#question-kokonut27" title="Answering Questions">💬</a></td>
+    <td align="center"><a href="https://dillonb07.is-a.dev"><img src="https://avatars.githubusercontent.com/u/83948303?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dillon Barnes</b></sub></a><br /><a href="https://github.com/DillonB07/GitAPI/commits?author=DillonB07" title="Code">💻</a> <a href="#infra-DillonB07" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-DillonB07" title="Maintenance">🚧</a> <a href="https://github.com/DillonB07/GitAPI/commits?author=DillonB07" title="Tests">⚠️</a></td>
   </tr>
 </table>
 

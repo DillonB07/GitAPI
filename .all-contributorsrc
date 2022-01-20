@@ -14,6 +14,18 @@
         "code",
         "question"
       ]
+    },
+    {
+      "login": "DillonB07",
+      "name": "Dillon Barnes",
+      "avatar_url": "https://avatars.githubusercontent.com/u/83948303?v=4",
+      "profile": "https://dillonb07.is-a.dev",
+      "contributions": [
+        "code",
+        "infra",
+        "maintenance",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7,

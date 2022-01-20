@@ -1,3 +1,5 @@
+> Currently, pyGitAPI is in development, so make sure you get the prerelease to get the features! If you create programs using this, there shouldn't be any breaking changes coming, but make sure to check the release notes! 
+
 # GitStats
 
 [![Tests](https://github.com/DillonB07/GitAPI/actions/workflows/pytest.yml/badge.svg)](https://github.com/DillonB07/GitAPI/actions/workflows/pytest.yml)
@@ -36,8 +38,10 @@ python3 -m pip install --upgrade pygitapi
 ### Poetry
 
 ```zsh
-poetry install pygitapi
+poetry install pygitapi@latest
 ```
+
+> Add the `--alow-prereleases` flag to get the latest pre-release
 
 ### Conda
 
@@ -58,6 +62,10 @@ pipenv install --selective-upgrade pygitapi
 
 Just import the modules you need and get started!
 
+*Proper documentation will come at the release of v1.0.0*
+
 ## License
 
 This project is licensed under the LGPLv3 license.
+
+We also follow the [`all-contributors`](https://allcontributors.org/) guidelines.

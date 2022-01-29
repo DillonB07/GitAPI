@@ -1,12 +1,12 @@
 import pytest
-from pygitapi.graphql import GitAPI
+from pygitapi.github import HubAPI
 import os
 from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
 token = os.environ['PERSONAL_ACCESS_TOKEN']
-g = GitAPI(token)
+g = HubAPI(token)
 
 
 def test_user_info():

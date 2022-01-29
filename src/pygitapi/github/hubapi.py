@@ -1,7 +1,7 @@
 from .utils import get_query
 
 
-class GitAPI:
+class HubAPI:
     """Use GitHub's GraphQL API to get information about repositories, users and more"""
 
     def __init__(self, git_token: str):

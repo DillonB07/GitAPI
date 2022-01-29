@@ -1,4 +1,3 @@
-> Currently, pyGitAPI is in development, so make sure you get the prerelease to get the features! If you create programs using this, there shouldn't be any breaking changes coming, but make sure to check the release notes! 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -13,6 +12,8 @@
 ![PyPI - License](https://img.shields.io/pypi/l/pygitapi?color=blue&label=License&logo=pypi&logoColor=yellow)
 
 pygitapi is a package that allows you to use the GitHub GraphQL API with ease in your Python programs.
+
+> BitBucket and GitLab API integration is planned! See [#18](https://github.com/DillonB07/GitAPI/issues/18) and [#19](https://github.com/DillonB07/GitAPI/issues/19)
 
 ## Installation
 
@@ -44,7 +45,7 @@ python3 -m pip install --upgrade pygitapi
 poetry install pygitapi@latest
 ```
 
-> Add the `--alow-prereleases` flag to get the latest pre-release
+> Add the `--allow-prereleases` flag to get the latest pre-release
 
 ### Conda
 
@@ -65,7 +66,7 @@ pipenv install --selective-upgrade pygitapi
 
 Just import the modules you need and get started!
 
-*Proper documentation will come at the release of v1.0.0*
+*Proper documentation is being worked on [#13](https://github.com/DillonB07/GitAPI/issues/13)*
 
 ## License
 

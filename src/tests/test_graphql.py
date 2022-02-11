@@ -11,20 +11,14 @@ g = HubAPI(token)
 
 def test_user_info():
     response = g.user_info('DillonB07')
-    if response['data']['user']['login'] == 'DillonB07':
-        output = True
-    else:
-        output = False
-    assert output == True
+    output = response['data']['user']['login'] == 'DillonB07'
+    assert output
 
 
 def test_repo_info():
     response = g.repo_info(owner='DillonB07', name='GitAPI')
-    if response['data']['repository']['nameWithOwner'] == 'DillonB07/GitAPI':
-        output = True
-    else:
-        output = False
-    assert output == True
+    output = response['data']['repository']['nameWithOwner'] == 'DillonB07/GitAPI'
+    assert output
 
 
 def test_custom_query():
@@ -42,7 +36,7 @@ query {
     else:
         print(response)
         output = False
-    assert output == True
+    assert output
 
 
 def test_get_issue_id():

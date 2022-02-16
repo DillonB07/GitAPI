@@ -34,7 +34,7 @@ Make sure that you don't keep your token in your code. You should use environmen
 from pygitapi import HubAPI
 import json
 
-h = HubAPI('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')
+h = HubAPI('PERSONAL ACCESS TOKEN')
 user_info = h.user_info('DillonB07')
 
 print(json.dumps(user_info, indent=4))

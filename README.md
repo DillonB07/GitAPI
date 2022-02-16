@@ -16,9 +16,7 @@ Here are a couple of examples of succinct overviews from products with really gr
 
 ## Getting Started
 
-**Got 2 minutes?** Check out a video of a demo project using this package
-
-{% embed url="https://www.loom.com/share/3bfa83acc9fd41b7b98b803ba9197d90" %}
+**Got a few minutes?** Check out the beginner guides below!
 
 ### Guides: Jump right in
 
@@ -55,7 +53,3 @@ Learn the fundamentals of pyGitAPI to get a deeper understanding of our main fea
 {% content-ref url="fundamentals/utilities.md" %}
 [utilities.md](fundamentals/utilities.md)
 {% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}

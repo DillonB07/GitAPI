@@ -4,9 +4,9 @@ from .utils import get_query
 class HubAPI:
     """Use GitHub's GraphQL API to get information about repositories, users and more"""
 
-    def __init__(self, git_token: str):
+    def __init__(self, token: str):
         """Hold GitHub token"""
-        self.token = git_token
+        self.token = token
         self.headers = {"Authorization": f"Bearer {self.token}"}
 
     def custom_query(self, query: str):

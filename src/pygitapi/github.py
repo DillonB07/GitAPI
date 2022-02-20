@@ -153,7 +153,7 @@ query {
 }
     '''
         response = self.custom_query(query)
-        return response['data']['repository']['issue']['id']
+        return response['repository']['issue']['id']
 
     def comment_on_issue(self, owner: str, repo: str, number: int, comment: str):
         id = self.get_issue_id(owner, repo, number)

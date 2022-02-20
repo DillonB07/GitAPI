@@ -48,8 +48,8 @@ def test_comment_on_issue():
     current_time = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     response = g.comment_on_issue(
         'DillonB07', 'GitAPI', 7, f'Test `test_comment_on_issue()` ran successfully at {current_time}')
-    assert response == {'data': {'addComment': {'commentEdge': {'node': {
-        'body': f'Test `test_comment_on_issue()` ran successfully at {current_time}'}}}}}
+    assert response == {'addComment': {'commentEdge': {'node': {
+        'body': f'Test `test_comment_on_issue()` ran successfully at {current_time}'}}}}
 
 
 def test_custom_mutation():
@@ -80,5 +80,5 @@ mutation {
     response = g.custom_query(mutation)
     print(response)
 
-    assert response == {'data': {'addComment': {'commentEdge': {'node': {
-        'body': f'Test `test_custom_mutation()` ran successfully at {current_time}'}}}}}
+    assert response == {'addComment': {'commentEdge': {'node': {
+        'body': f'Test `test_custom_mutation()` ran successfully at {current_time}'}}}}

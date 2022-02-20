@@ -11,13 +11,13 @@ g = HubAPI(token)
 
 def test_user_info():
     response = g.user_info('DillonB07')
-    output = response['data']['user']['login'] == 'DillonB07'
+    output = response['user']['login'] == 'DillonB07'
     assert output
 
 
 def test_repo_info():
     response = g.repo_info(owner='DillonB07', name='GitAPI')
-    output = response['data']['repository']['nameWithOwner'] == 'DillonB07/GitAPI'
+    output = response['repository']['nameWithOwner'] == 'DillonB07/GitAPI'
     assert output
 
 
@@ -31,7 +31,7 @@ query {
 }
     '''
     response = g.custom_query(query)
-    if response['data']['user']['login'] == 'DillonB07' and response['data']['user']['url'] == 'https://github.com/DillonB07':
+    if response['user']['login'] == 'DillonB07' and response['user']['url'] == 'https://github.com/DillonB07':
         output = True
     else:
         print(response)
@@ -63,7 +63,7 @@ query {
 }
     '''
     id_response = g.custom_query(query)
-    id = id_response['data']['repository']['issue']['id']
+    id = id_response['repository']['issue']['id']
     time = datetime.now()
     current_time = time.strftime("%d-%m-%Y %H:%M:%S")
     mutation = '''

@@ -49,69 +49,67 @@ The `json.dumps()` is not necessary. I've used this to make the output more read
 
 ```json
 {
-    "data": {
-        "user": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/83948303?v=4",
-            "bio": "An aspiring web developer who likes making weird and useless projects",
-            "company": "Replit Coder | Hobby Coder",
-            "email": "dillonbarnes07@gmail.com",
-            "followers": {
-                "totalCount": 6
-            },
-            "following": {
-                "totalCount": 17
-            },
-            "isCampusExpert": false,
-            "isDeveloperProgramMember": true,
-            "issues": {
-                "totalCount": 58
-            },
-            "itemShowcase": {
-                "hasPinnedItems": true,
-                "items": {
-                    "nodes": [
-                        {
-                            "name": "Portfolio"
-                        },
-                        {
-                            "name": "Spotter"
-                        },
-                        {
-                            "name": "FlaskBoilerplate"
-                        },
-                        {
-                            "name": "Dizzle"
-                        },
-                        {
-                            "name": "QAPI"
-                        },
-                        {
-                            "name": "theiolang.github.io"
-                        }
-                    ]
-                }
-            },
-            "location": "GMT, Leicester",
-            "login": "DillonB07",
-            "name": "Dillon Barnes",
-            "organizations": {
-                "nodes": [],
-                "totalCount": 0
-            },
-            "pullRequests": {
-                "totalCount": 36
-            },
-            "repositories": {
-                "totalCount": 40
-            },
-            "starredRepositories": {
-                "totalCount": 72
-            },
-            "status": null,
-            "twitterUsername": null,
-            "url": "https://github.com/DillonB07",
-            "websiteUrl": "https://dillonb07.is-a.dev"
-        }
+    "user": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/83948303?v=4",
+        "bio": "An aspiring web developer who likes making weird and useless projects",
+        "company": "Replit Coder | Hobby Coder",
+        "email": "dillonbarnes07@gmail.com",
+        "followers": {
+            "totalCount": 6
+        },
+        "following": {
+            "totalCount": 17
+        },
+        "isCampusExpert": false,
+        "isDeveloperProgramMember": true,
+        "issues": {
+            "totalCount": 58
+        },
+        "itemShowcase": {
+            "hasPinnedItems": true,
+            "items": {
+                "nodes": [
+                    {
+                        "name": "Portfolio"
+                    },
+                    {
+                        "name": "Spotter"
+                    },
+                    {
+                        "name": "FlaskBoilerplate"
+                    },
+                    {
+                        "name": "Dizzle"
+                    },
+                    {
+                        "name": "QAPI"
+                    },
+                    {
+                        "name": "theiolang.github.io"
+                    }
+                ]
+            }
+        },
+        "location": "GMT, Leicester",
+        "login": "DillonB07",
+        "name": "Dillon Barnes",
+        "organizations": {
+            "nodes": [],
+            "totalCount": 0
+        },
+        "pullRequests": {
+            "totalCount": 36
+        },
+        "repositories": {
+            "totalCount": 40
+        },
+        "starredRepositories": {
+            "totalCount": 72
+        },
+        "status": null,
+        "twitterUsername": null,
+        "url": "https://github.com/DillonB07",
+        "websiteUrl": "https://dillonb07.is-a.dev"
     }
 }
 ```

@@ -1,5 +1,5 @@
 # BucketAPI
 
 {% hint style="warning" %}
-**COMING SOON...**
+**Support for BitBucket is coming soon**
 {% endhint %}

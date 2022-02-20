@@ -1,5 +1,5 @@
 # Utilities
 
 {% hint style="warning" %}
-**COMING SOON...**
+**Utility functions are coming soon**
 {% endhint %}

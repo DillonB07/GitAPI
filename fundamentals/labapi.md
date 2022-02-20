@@ -1,5 +1,5 @@
 # LabAPI
 
 {% hint style="warning" %}
-**COMING SOON...**
+**Support for GitLab is coming soon**
 {% endhint %}

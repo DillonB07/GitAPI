@@ -39,7 +39,7 @@ print(h.custom_query(query))
 This will return:
 
 ```
-{'data': {'user': {'name': 'Dillon Barnes'}}}
+{'user': {'name': 'Dillon Barnes'}}
 ```
 
 {% hint style="success" %}

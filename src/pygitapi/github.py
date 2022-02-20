@@ -74,7 +74,7 @@ query {
 
         return self.custom_query(query)
 
-    def repo_info(self, name: str, owner: str):
+    def repo_info(self, owner: str, name: str):
         """Returns basic information about given repositor"""
         query = """
 query {

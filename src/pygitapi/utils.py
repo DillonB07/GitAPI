@@ -19,7 +19,7 @@ class QueryFailError(Exception):
 def get_query(headers: dict, query: str):
     request = requests.post(URL, json={"query": query}, headers=headers)
     if request.status_code == 200:
-        return json.JSONDecoder().decode(json.dumps(request.json(), sort_keys=True))
+        return json.JSONDecoder().decode(json.dumps(request.json(), sort_keys=True))['data']
     else:
         raise QueryFailError(
             "Query failed to run by returning code of {}. {}".format(

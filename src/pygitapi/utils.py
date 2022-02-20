@@ -18,14 +18,17 @@ class QueryFailError(Exception):
 
 def get_query(headers: dict, query: str):
     request = requests.post(URL, json={"query": query}, headers=headers)
-    if request.status_code == 200:
-        return json.JSONDecoder().decode(json.dumps(request.json(), sort_keys=True))['data']
-    else:
+    if request.status_code != 200:
         raise QueryFailError(
             "Query failed to run by returning code of {}. {}".format(
                 request.status_code, query
             )
         )
+    response = json.JSONDecoder().decode(json.dumps(request.json(), sort_keys=True))
+    try:
+        return response['data']
+    except KeyError:
+        return response
 
 
 def check_alerts():

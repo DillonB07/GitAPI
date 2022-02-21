@@ -203,3 +203,7 @@ cython_debug/
 .idea/
 
 test.py
+
+# Replit gitignore
+main.py
+.replit

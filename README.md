@@ -66,7 +66,9 @@ pipenv install --selective-upgrade pygitapi
 
 Just import the modules you need and get started!
 
-*Proper documentation is being worked on [#13](https://github.com/DillonB07/GitAPI/issues/13)*
+Check out the documentation here: https://docs.pygitapi.cf
+
+*Documentation is being worked on [#13](https://github.com/DillonB07/GitAPI/issues/13)*
 
 ## License
 
